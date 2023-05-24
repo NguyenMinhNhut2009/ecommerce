@@ -1,12 +1,14 @@
 import 'package:ecommerce/const/consts.dart';
 import 'package:ecommerce/const/lists.dart';
 import 'package:ecommerce/views/auth_screen/sigup_screen.dart';
+import 'package:ecommerce/views/home_screen/home.dart';
 import 'package:ecommerce/widget/applogo_widget.dart';
 import 'package:ecommerce/widget/bg_widget.dart';
 import 'package:ecommerce/widget/custom_textflied.dart';
 import 'package:ecommerce/widget/our_button.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+
 class LoginScreen extends StatelessWidget {
   const LoginScreen({super.key});
 
@@ -36,13 +38,12 @@ class LoginScreen extends StatelessWidget {
                 ),
                 5.heightBox,
                 ourButton(
-                        color: redColor,
-                        title: login,
-                        textColor: whiteColor,
-                        onpress: () {})
-                    .box
-                    .width(context.screenWidth - 50)
-                    .make(),
+                    color: redColor,
+                    title: login,
+                    textColor: whiteColor,
+                    onpress: () {
+                      Get.to(() => const Home());
+                    }).box.width(context.screenWidth - 50).make(),
                 5.heightBox,
                 createNewAccount.text.color(fontGrey).make(),
                 5.heightBox,

@@ -1,5 +1,5 @@
 import 'package:ecommerce/const/consts.dart';
-import 'package:ecommerce/const/lists.dart';
+
 import 'package:ecommerce/widget/applogo_widget.dart';
 import 'package:ecommerce/widget/bg_widget.dart';
 import 'package:ecommerce/widget/custom_textflied.dart';
@@ -7,9 +7,15 @@ import 'package:ecommerce/widget/our_button.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
-class SigUpScreen extends StatelessWidget {
+class SigUpScreen extends StatefulWidget {
   const SigUpScreen({super.key});
 
+  @override
+  State<SigUpScreen> createState() => _SigUpScreenState();
+}
+
+class _SigUpScreenState extends State<SigUpScreen> {
+  bool? isCheck = false;
   @override
   Widget build(BuildContext context) {
     return bgWidget(
@@ -32,9 +38,14 @@ class SigUpScreen extends StatelessWidget {
                 Row(
                   children: [
                     Checkbox(
-                        checkColor: redColor,
-                        value: false,
-                        onChanged: (vauke) {}),
+                        activeColor: redColor,
+                        checkColor: whiteColor,
+                        value: isCheck,
+                        onChanged: (vaule) {
+                          setState(() {
+                            isCheck = vaule;
+                          });
+                        }),
                     10.widthBox,
                     Expanded(
                       child: RichText(
@@ -42,23 +53,23 @@ class SigUpScreen extends StatelessWidget {
                           children: [
                             TextSpan(
                               text: "I agree to the ",
-                              style:
-                                  TextStyle(fontFamily: bold, color: fontGrey),
+                              style: TextStyle(
+                                  fontFamily: regular, color: fontGrey),
                             ),
                             TextSpan(
                               text: ternAndCond,
-                              style:
-                                  TextStyle(fontFamily: bold, color: redColor),
+                              style: TextStyle(
+                                  fontFamily: regular, color: redColor),
                             ),
                             TextSpan(
                               text: "& ",
-                              style:
-                                  TextStyle(fontFamily: bold, color: fontGrey),
+                              style: TextStyle(
+                                  fontFamily: regular, color: fontGrey),
                             ),
                             TextSpan(
                               text: privacyPolicy,
-                              style:
-                                  TextStyle(fontFamily: bold, color: redColor),
+                              style: TextStyle(
+                                  fontFamily: regular, color: redColor),
                             ),
                           ],
                         ),
@@ -68,9 +79,9 @@ class SigUpScreen extends StatelessWidget {
                 ),
                 5.heightBox,
                 ourButton(
-                        color: redColor,
+                        color: isCheck == true ? redColor : lightGrey,
                         title: signup,
-                        textColor: whiteColor,
+                        textColor: isCheck == true ? whiteColor : redColor,
                         onpress: () {})
                     .box
                     .width(context.screenWidth - 50)
