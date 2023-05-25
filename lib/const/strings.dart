@@ -16,6 +16,7 @@ const loginWith = "Log in with";
 const privacyPolicy = "Privacy Policy";
 const ternAndCond = "Terms and Conditions";
 const alreadyHaveAccount = "Already have an account? ";
+const logout = "Log out";
 
 //home string
 const home = "Home",
@@ -59,3 +60,7 @@ const video = "Video",
     returnpolicy = "Return Policy",
     supporPolicy = "Support Policy",
     productsyoumaylike = "Products you may like";
+
+//profile strings
+
+const wishlist = "My List", orders = "My Orders", message = "Message";
