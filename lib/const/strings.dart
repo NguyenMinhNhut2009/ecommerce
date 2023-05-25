@@ -38,3 +38,24 @@ const searchanything = "Search anything...",
     girlsDress = "Girls Dresses",
     featureProduct = "Feature Product",
     featuredCategories = "Featured Categories";
+
+//category Strings
+
+const womenClothing = "Women CLothing",
+    menClothingFashiion = "Men Clothing & Fashion",
+    compAccess = "Computer & Accessories",
+    automobile = "Automobile",
+    kidtoys = "Kids & Toys",
+    sports = "Sports",
+    jewelery = "Jewelery",
+    cellphone = "CellPhone & Tab",
+    furniture = "Furniture";
+
+//item detail
+
+const video = "Video",
+    reviews = "Reviews",
+    sellerpolicy = "Seller Policy",
+    returnpolicy = "Return Policy",
+    supporPolicy = "Support Policy",
+    productsyoumaylike = "Products you may like";

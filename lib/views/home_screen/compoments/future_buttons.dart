@@ -15,7 +15,7 @@ Widget featureButton({image, String? title}) {
   )
       .box
       .width(200)
-      .margin(EdgeInsets.symmetric(horizontal: 4  ))
+      .margin(const EdgeInsets.symmetric(horizontal: 4  ))
       .white
       .padding(const EdgeInsets.all(4))
       .roundedSM

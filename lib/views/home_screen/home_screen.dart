@@ -184,7 +184,7 @@ class HomeScren extends StatelessWidget {
                                       )
                                           .box
                                           .white
-                                          .margin(EdgeInsets.symmetric(
+                                          .margin(const EdgeInsets.symmetric(
                                               horizontal: 4))
                                           .roundedSM
                                           .padding(const EdgeInsets.all(8))
@@ -255,7 +255,7 @@ class HomeScren extends StatelessWidget {
                       )
                           .box
                           .white
-                          .margin(EdgeInsets.symmetric(horizontal: 4))
+                          .margin(const EdgeInsets.symmetric(horizontal: 4))
                           .roundedSM
                           .padding(const EdgeInsets.all(8))
                           .make();
