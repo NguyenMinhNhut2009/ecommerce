@@ -14,6 +14,8 @@ const signup = "Sign up";
 const createNewAccount = "or, create a new account";
 const loginWith = "Log in with";
 const privacyPolicy = "Privacy Policy";
+const loggedin = "Logged in successfully";
+const loggedout = "Logged out successfully";
 const ternAndCond = "Terms and Conditions";
 const alreadyHaveAccount = "Already have an account? ";
 const logout = "Log out";
@@ -63,4 +65,8 @@ const video = "Video",
 
 //profile strings
 
-const wishlist = "My List", orders = "My Orders", message = "Message";
+const wishlist = "My List",
+    orders = "My Orders",
+    message = "Message",
+    oldpass = "Old Password",
+    newpass = "New Password";
