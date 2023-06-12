@@ -7,6 +7,70 @@
             "Tops & Sets",
             "Watches"
         ]
+    },
+    {
+        "name":"Men Clothing & Fashion",
+        "subcategory":[
+            "Outwear & Jackets",
+            "Formal Dress",
+            "Accessories"
+        ]
+    },
+    {
+        "name":"Computer & Accessories",
+        "subcategory":[
+            "Laptop",
+            "Gaming PC",
+            "Official Equipment"
+        ]
+    },
+    {
+        "name":"Automobile",
+        "subcategory":[
+            "Cars",
+            "Bikes"
+            
+        ]
+    },
+    {
+        "name":"Kids & Toys",
+        "subcategory":[
+            "Shoes & Bags",
+            "baby Clothing",
+            "Girls Toys"
+        ]
+    },
+    {
+        "name":"Toys",
+        "subcategory":[
+            "Cycling",
+            "Snenkers",
+            "Swiming"
+        ]
+    },
+    {
+        "name":"Jewelery",
+        "subcategory":[
+            "Necklace",
+            "Gold",
+            "Earing"
+        ]
+    },
+    {
+        "name":"Cellphone & Tabs",
+        "subcategory":[
+            "Smartphone",
+            "Tables",
+            "Accessories"
+        ]
+    },
+    {
+        "name":"Furniture",
+        "subcategory":[
+            "Sofa",
+            "Bed",
+            "Home Textile"
+        ]
     }
 
 ]
